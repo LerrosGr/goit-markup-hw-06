@@ -112,19 +112,18 @@ button {
 .navigation-link:active {
   color: #404bbf;
 }
-.main-list-item {
+.navigation-link {
   position: relative;
+  color: #2e2f42;
   overflow: hidden;
 }
 .navigation-link::after {
-  position: absolute;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: -1px;
-  margin-top: 20px;
   content: "";
-  width: 48px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: #404bbf;
@@ -136,6 +135,7 @@ button {
 .navigation-link:active::after {
   transform: translateY(0%);
 }
+
 .main-contacts {
   font-style: normal;
 }
